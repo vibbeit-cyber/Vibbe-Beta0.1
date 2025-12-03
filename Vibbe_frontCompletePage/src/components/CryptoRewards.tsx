@@ -3,47 +3,57 @@ import VibbeWhite from "@/assets/Vibbe White text logo 1.png";
 
 const CryptoRewards = () => {
   return (
-    <section className="w-full py-16 md:py-24 px-6 bg-[hsl(var(--dark-section))] text-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-        <div className="bg-black text-white py-16 px-6">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="relative w-full bg-[hsl(var(--dark-section))] text-white py-24 px-6">
 
-    {/* LEFT SIDE – Left aligned heading */}
-    <div className="text-left">
-      <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-        Earn Rewards in<br />
-        Crypto.
-      </h2>
-    </div>
+      {/* CENTERED CONTAINER */}
+      <div className="max-w-5xl mx-auto">
 
-    {/* RIGHT SIDE – Center aligned content */}
-    <div className="text-center">
-      <p className="text-lg leading-relaxed text-white/90 mb-8">
-        Build on Blockchain, Vibbe rewards <br /> 
-        all users in Vibbe Tokens which could <br /> 
-        be converted to Crypto-coins <br />
-        on your preferred crypto wallet. <br />
-      </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-      <div className="flex justify-center">
-        <img
-          src={VibbeCoins}
-          alt="Vibbe coins"
-          className="h-16"
-        />
-      </div>
-    </div>
+          {/* LEFT: HEADING */}
+{/* CENTERED CONTENT BLOCK WITH LEFT BIAS ON DESKTOP */}
+<div className="max-w-4xl mx-auto md:ml-0 flex flex-col gap-16">
 
-  </div>
+  {/* LEFT: HEADING */}
+  <h2 className="text-4xl md:text-5xl font-bold leading-tight text-left">
+    Earn Rewards in <br /> Crypto.
+  </h2>
+
+  {/* rest of content... */}
+
 </div>
 
 
-          <div className="flex items-center justify-end h-full">
-            <img src={VibbeWhite} alt="Vibbe" className="h-12" />
+          {/* RIGHT: PARAGRAPH + INLINE ICONS */}
+          <div className="flex flex-col w-full">
+
+            {/* TEXT */}
+            <p className="text-lg leading-relaxed text-white/90 mb-8 max-w-sm text-left md:text-left mx-auto md:mx-0">
+              Build on Blockchain, Vibbe rewards all users in Vibbe Tokens which
+              could be converted to an Crypto-coins on your preferred crypto wallet.
+            </p>
+
+            {/* ICONS ROW RIGHT-ALIGNED */}
+            <div className="flex justify-end items-center gap-6 pr-2">
+
+              <img
+                src={VibbeCoins}
+                alt="Vibbe coins"
+                className="h-14 md:h-16"
+              />
+
+              <img
+                src={VibbeWhite}
+                alt="Vibbe"
+                className="h-10 md:h-12 opacity-90"
+              />
+
+            </div>
+
           </div>
         </div>
       </div>
+
     </section>
   );
 };
