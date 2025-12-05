@@ -6,7 +6,7 @@ const PrivacyFeatures = () => {
     },
     {
       title: "One Login <br /> Multiple Alter-Ego's",
-      description: "You can manage multiple profiles <br /> under one sign-in keeping your <br /> friends and conversations independent in each profile."
+      description: "You can manage multiple profiles <br /> under one sign-in keeping your <br /> friends and conversations <br /> independent in each profile."
     },
     {
       title: "Know your <br /> Stalkers",
