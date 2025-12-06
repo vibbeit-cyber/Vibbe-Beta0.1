@@ -1,4 +1,3 @@
-
 import VibbePink from "@/assets/Vibbe pink  text logo.png";
 
 const Hero = () => {

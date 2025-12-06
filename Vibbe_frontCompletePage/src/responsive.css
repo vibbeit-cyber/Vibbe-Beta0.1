@@ -1,0 +1,28 @@
+/* -----------------------------
+   GLOBAL RESPONSIVE UTILITIES
+   Add custom tweaks here
+-------------------------------- */
+
+/* Slightly reduce title text on very small screens */
+@media (max-width: 400px) {
+  .title-sm {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+}
+
+/* Improve paragraph readability on tiny screens */
+@media (max-width: 400px) {
+  .para-sm {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+}
+
+/* Better spacing below sections on small devices */
+@media (max-width: 480px) {
+  .section-sm {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
